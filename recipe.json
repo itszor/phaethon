@@ -1,0 +1,78 @@
+{
+ "name": "phaethon",
+ "title": "Phaethon (Sinusoidal Tendencies, 1993)",
+ "platform": "acorn-archimedes",
+ "doc": "A recipe: how to turn a user's own copy of the game into a native executable. It holds no game data: the inputs are recognised by content (see $SS/tools/weave.py). !Phaethon is packed (Acorn squeeze, then further layers); tools/unpack runs its own unpackers under libroger's interpreter.",
+ "inputs": {
+  "containers": {
+   "phaethon.zip": "53d0e0f4f1f89cfbe0b164941712d6b20cc72295d37feb49f5f164e64c949744"
+  },
+  "formats": [
+   "zip",
+   "directory"
+  ]
+ },
+ "discs": [
+  {
+   "name": "zip",
+   "title": "phaethon.zip: !Phaethon (the game, the Squash module, music and effects) and !Zones (the zones, their music, high scores)",
+   "known_images": [
+    "89c2f1a053bfbac786789c86cb7efce5c7440c2a3248109ae01f23c11e1cd09e"
+   ],
+   "key_files": {
+    "!Phaethon/!Boot": "e420283591bca926b85e3c11f61b6c87ae31c80de465b87bcb4e925f24653642",
+    "!Phaethon/!Phaethon": "55a1931e5710a547194bea740bbe6569a74c827f581efe9c46662615de128686",
+    "!Phaethon/!Run": "dc19c40ca927033ebc7605faa3c13c7b5d7483dbe60543270cf935a66d56c630",
+    "!Phaethon/!RunImage": "3cbfdb0475539401b40f69866e935a13451168fcb2bba8483b34b6c45d493e88",
+    "!Phaethon/!Sprites": "0ef96ff7c7a389fd30cb14c71ed10f6466e6e9bfff438d78373dd07651b1bd7d",
+    "!Phaethon/!Sprites22": "2957626915c1ab9d6d74aced049874e7eff607c36709ee29fddf925a57b4a121",
+    "!Phaethon/!Sprites23": "d17ad79e493e28a7506a9deccc4c2f881b33250311625c1853bfa5a5896c8699",
+    "!Phaethon/IntroMusic": "66d1698d1d3f4dafea9cd48ebc6ac95f522cfcad599e90774971144d0b7b3ef6",
+    "!Phaethon/SoundFX": "98ebb2a05f412cfe3aa43d4593fe8be25814087cf64cc95ae2365df19cb0a81a",
+    "!Phaethon/Squash": "ed787d1b6892f7fc7b2ac0d044f22b562ba42cabe9c69dc93a9b1379b8f59909",
+    "!Zones/!3Dsprites": "52652f523383a6f4a82e80f1354d5b9398e1382b11795942dbda0f0caa25fee5",
+    "!Zones/!Boot": "aadbb894744ef99579a50da9c9645d5cba9d69f497191c8eda90634977608ffc",
+    "!Zones/!Run": "f75c7c23ce0b2d5eb20936926551e0692a8039a4e690aaf5a57761bb7cfa7cce",
+    "!Zones/!Sprites": "9fbafd917ecdda0de427f74a5db91e75251f10d72b02c652a14de5f806962a80",
+    "!Zones/!Sprites22": "36092d4bf5bba44f20ec1b52042bd3252f72bd88fd7f6fc7bd6842c0236a7729",
+    "!Zones/!Sprites23": "fada3032485b7fe54b87ed3b9409890333d7a26ca4cb037010a848994e5a4df1",
+    "!Zones/3Dcheck": "f40ac7fde3445ddee11cafd9059e5b0a818a1c692ede65d645d4605f6802b5bb",
+    "!Zones/Trackers/EndZone": "92e93d3abeb2151e8e716814937a89ab0613f4d710801da9a68ded5c479394c6",
+    "!Zones/Trackers/InterLevel": "74ad4057bcdc985ccbc613a6fd07e6c42c7e327c85426929e59c4010d0ca27bd",
+    "!Zones/Trackers/IntroMusic": "c9786ceee34a242027a8929846b8d70db6ec18d1ff321963da6cd040ae9fdf77",
+    "!Zones/Trackers/Zone1": "a150b27f480fc67ec162c88b6a51c6540ba8dd0f4e144012c1323481c936c17a",
+    "!Zones/Trackers/Zone2": "3c2ef38da4341842234aad40a4e45555d1720a1e1ecd736174b458233810905f",
+    "!Zones/Trackers/Zone3": "6bc14fe0c3edd2630f0600b9ccfb57eeeb9e4f01a8124808596cb03a1961f67e",
+    "!Zones/Trackers/Zone4": "7cfc7efa2bf8374f240d71e86b4117dd1dbd1164cc995f78aaf78dedf0061aea",
+    "!Zones/Trackers/Zone5": "f5c111cb6a5f474f51851694ef670cabb27d36441060fac2517a4ae65f1dc64e",
+    "!Zones/Zones/Normal/1": "4e789c540bde8d8e76536bf8cc8b8730e015ff508a952955fcdd9328dd141792",
+    "!Zones/Zones/Normal/2": "cfb7b4f2bf2386a3b8382f8c4797ea860c6cf90e375a29c80af9340c4110ddfb",
+    "!Zones/Zones/Normal/3": "28cf5a63f1401cc202ed8465d56c778bb2225297c1dceb86698ff60ad3772780",
+    "!Zones/Zones/Normal/4": "99aaae040d66f2b45fe6c766af82c3e4a63df04473f25090f2089b03280caa70",
+    "!Zones/Zones/Normal/5": "0e96eebf9faaf2cc4e7038f8f0a86c5e11acb806def5853e2d233cacadb003ae"
+   },
+   "game_dirs": [
+    "!Phaethon",
+    "!Zones"
+   ]
+  }
+ ],
+ "build": [
+  "python3 -I \"$WEAVE\" extract . INPUTS",
+  "make -C tools",
+  "make -C recomp regen",
+  "make -C recomp"
+ ],
+ "output": "recomp/phaethon",
+ "requires": {
+  "superspider": "~/stuff/superspider, or $SUPERSPIDER (dune build): analyse, gen, tools/weave.py",
+  "libroger": "~/stuff/libroger, or make ROGER=...",
+  "host": [
+   "python3",
+   "ocaml + dune",
+   "gcc",
+   "SDL3 (pkg-config sdl3)"
+  ]
+ },
+ "run": "cd recomp && ./phaethon"
+}

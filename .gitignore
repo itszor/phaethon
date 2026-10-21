@@ -1,0 +1,40 @@
+# Python / editors
+__pycache__/
+*.pyc
+*.swp
+
+# The original game and everything made from it stay out of the
+# repository: build.sh (recipe.json) remakes them from the user's own copy.
+*.zip
+/!Phaethon/
+/!Zones/
+extracted/
+game/
+unpacked/
+analysis/*.json
+analysis/*.json.new
+analysis/*.log
+
+# The unpacker (tools/Makefile) and what its runs leave
+tools/unpack
+tools/*.events
+tools/*.vdu
+tools/*.screen
+tools/*.regs
+tools/*.bmp
+tools/untranslated.log
+
+# Recompilation: generated C, objects, binaries, run outputs
+recomp/gen/
+recomp/genintro/
+recomp/*.o
+recomp/phaethon
+recomp/*.events
+recomp/*.vdu
+recomp/*.screen
+recomp/*.regs
+recomp/*.bmp
+recomp/*.png
+recomp/*.wav
+recomp/*.log
+recomp/savedata/
