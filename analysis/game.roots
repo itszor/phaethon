@@ -26,3 +26,4 @@
 &abc0	# gap entry, from pc=&aad8 LR=&8000a9c4
 &abe4	# gap entry, from pc=&ac0c LR=&8000a9c4
 &abec	# gap entry, from pc=&abe0 LR=&8000a9c4
+&35bd4	# gap entry, from pc=&35bb8 LR=&2001c7ec
