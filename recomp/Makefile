@@ -9,7 +9,7 @@ CFLAGS  ?= -O2 -g -w -fno-strict-aliasing $(if $(TRACE),-DRECOMP_TRACE)
 GEN     := $(wildcard gen/code*.c) gen/entries.c
 GENINTRO:= $(wildcard genintro/code*.c) genintro/entries.c
 OBJ     := $(GEN:.c=.o) $(GENINTRO:.c=.o) game.o
-LIBS    := $(shell pkg-config --libs sdl3) -lm -lpthread
+LIBS    := $(shell pkg-config --libs sdl3) -ljpeg -lm -lpthread
 INC     := -I$(ROGER)/include
 
 phaethon: $(OBJ) $(ROGER)/libroger.a
